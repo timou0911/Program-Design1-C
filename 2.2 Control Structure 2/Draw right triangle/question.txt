@@ -1,0 +1,30 @@
+
+After entering the position of the right angle of the triangle and the number of layers, the program can print out the corresponding triangle.
+
+
+There are four ways to draw a right triangle: right angle at the top left, right angle at the bottom left, right angle at the top right, and right angle at the bottom right.
+
+
+
+The first value entered represents the position of the right angle. The mapping of values to positions is shown below. The second one is the number of levels of the triangle.
+
+"1" for upper left
+
+"2" for lower left
+
+"3" for upper right
+
+"4" for bottom right
+
+
+Input
+
+Two integers i and j are separated by a space.
+
+Integer i indicates the right angle position, with range 1-4; integer j indicates the number of layers of the triangle, with range 1-100.
+
+Output
+
+According to the input conditions, the corresponding triangle is printed with "*".
+
+Notice: When the right angle is on the top left and bottom left, there is no need to print a blank after the "*" is printed.

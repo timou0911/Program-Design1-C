@@ -1,0 +1,32 @@
+Remember the dragon that we fought against in Dungeons & Dragons? We have learnt how to map the score of dice to different actions, and we are going to fight with the dragon till the end. Notice that the rule has been modified, following are the updated rule:
+
+The sum of d1, d2 and d3 determines that who takes the turn to attack: If the sum is odd, the player attacks. Otherwise, the dragon attacks.
+
+In the player's turn to attack, there are three cases:
+
+If the score of d4, d5 and d6 are in ascending order, that is, d6 is greater than d5 and d5 is greater than d4, the player makes a critical hit. (25 pt)
+
+If the remainder of d4 and d5 divided by 2 are identical, or if the remainder of d5 and d6 divided by 2 are identical, the player makes a normal hit. (5 pt)
+
+Otherwise, the attack misses. (0 pt)
+
+In the dragon's turn to attack, there are also three cases:
+
+If the difference between d5 and d4 is greater than d6, the dragon makes a critical hit. (15 pt).
+
+If the sum of d4 and d5 is not equal to d6, the dragon makes a normal attack. (5 pt)
+
+Otherwise, the attack from the dragon misses.
+
+The cases must be evaluated in the above order.
+
+Both the player and the dragon have 100 pt of health point at the beginning.
+
+The fight ends immediately once one of the player and the dragon has no health point.
+
+
+Input
+A series of input lines with 6 integers in each line. The integers in each line indicates the score of six dice (d1, ..., d6).
+
+Output
+The winner of the fight, either "Player wins" or "Dragon wins".

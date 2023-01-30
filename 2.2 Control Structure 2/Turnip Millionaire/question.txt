@@ -1,0 +1,20 @@
+Xuan is a turnip trader. On her island, the price of turnips fluctuate everyday. If she can buy them at low price and sell them at high price, she can make millions. Everyday she records the price of turnips, and she wish she can find the key to success from the trunip price fluctuations. Now she has hundreds of turnip price record, but she doesn't know how to utilize it. So she found you, a big (turnip price) data expert.
+
+Since you have been studying on big data for several years, you know that Recurrent Neural Network (RNN) is a good deep learning model for predicting turnip price. RNN is good at handling sequential data. We can use a sequence of number as training data, and train a RNN to predict the next number of the sequence. Specifically, suppose that the input data at time t is x{t}, and the output data at next tick (i.e. time t + 1) is y{t+1}. A RNN can utilize x{t} to calculate y{t+1} by the following formula:
+
+h{t+1} = w * x{t} + u * h{t} + b
+y{t+1} = f(u' * h{t+1} + b')
+
+Here, h{t} is the hidden state of the model at time t. RNN uses this mechanism to "remembers" historical information, and then utilizes it to predict the future. w, u, b, u', b' are the parameters of the model. Once the model training process is finished, these parameters are constants. And f() is called activation function. It is used to adjust the numerical range of output value in the training process.
+
+Please be careful with the subscription of x, y and h: we use the input data at time t (x{t}) and the hidden state at time t (h{t}) to calculate the hidden state of time t + 1 (h{t+1}), and then use h{t+1} to calculate the output of time t + 1 (y{t+1}). And at time 0, the hidden state h{0} is usually set to 0.
+
+You used the data Xuan gave to you to train a RNN, and you found that the parameters of the model are (w, u, b, u', b') = (0.9, 0.1, -51, -0.98, 153), with the activation function being identity function f(x) = x. Every Sunday, Xuan comes to tell you the price of turnips on that day, and she want to know the turnips price on the following 5 days, so she can determine when to trade them. Can you help Xuan become a turnip millionaire?
+
+Input
+
+A floating point number x representing the turnips price on Sunday. 50 <= x <= 150.
+
+Output
+
+Five floating point numbers printed to 1 decimal place, representing the turnips price on the following 5 days. Separate each number with a space.
