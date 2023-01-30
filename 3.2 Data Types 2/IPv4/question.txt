@@ -1,0 +1,19 @@
+Internet Protocol version 4 (IPv4) is one of the most important protocols connecting the whole cyber world. It defines a set of rules of how computers on the Internet communicate with each other.
+
+Just like a mailman needs to know the address of your house to deliver your mail, computers on the Internet need to know the address of others so they can transmit data. According to IPv4, every computer that want to connect to other computers requires an unique address, as known as IP address. An IP address is a 32 bits data, which can be represented in an 8 digit hexadecimal number. But for better human reliability, they are most often written in dot-decimal notation, which can be obtained by separating the 32 bits address into 4 octets (bytes), converting each octet to a decimal number, and concatenating these decimal numbers with periods. For example, the localhost of a computer is:
+
+01111111 00000000 00000000 00000001 (7F000001)
+But it is more common to write it as: 127.0.0.1
+
+Since 01111111 is 127 in decimal, 00000000 is 0, and 00000001 is 1, the address 01111111 00000000 00000000 00000001 can be written as 127.0.0.1.
+
+Now, given an IP address in hexadecimal format, please convert them into the dot-decimal notation.
+
+
+Input
+
+An 8 digit hexadecimal number.
+
+Output
+
+An IP address in dot-decimal notation.

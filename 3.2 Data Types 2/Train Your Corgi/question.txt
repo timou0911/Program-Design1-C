@@ -1,0 +1,26 @@
+Ash wants to become a Pokémon master. His first Pokémon is a corgi. Ash wants his corgi to learn 5 commands. Each Pokémon has two individual value: strength and obedience, whose initial value is INIT_STRENGTH and INIT_OBEDIENCE respectively. With training, the individual values will change as follows:
+
+When Ash feeds corgi, the strength will increase by STRENGTH_EAT, but the obedience will decrease by OBEDIENCE_EAT
+
+When Ash trains corgi, the obedience will increase by OBEDIENCE_TRAIN, but the strength will decrease by STRENGTH_TRAIN
+
+Corgi can successfully learn a command when the obedience is not less thanLEARN_OBEDIENCE and the strength is no greater thanLEARN_STRENGTH. When a command is learned, the strength will remain unchanged and the obedience will become INIT_OBEDIENCE.
+
+Ash planned a training routine to train his corgi. Please help Ash evaluate whether or not this training routine can make his corgi learn 5 commands.
+
+Notice: All the constants mentioned above are defined as macros, and the data type of strength and obedience are also defined as Strength and Obedience using typedef. Please use these macros and customized data type to solve the problem.
+
+
+Input
+
+A character string ending with '\n'.
+
+When the input character is 'e': feed.
+
+When the input character is 't': train.
+
+When the input character is '\n': exit program.
+
+Output
+
+Output "Yes" when successfully trained. Otherwise output "No".
