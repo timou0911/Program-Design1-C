@@ -1,0 +1,12 @@
+The space around the jumping point started to go out of control, so she found that the dimension she was in had changed from the original three dimensions to five dimensions.
+
+So V-Guide has a sudden idea to extend the original definition of two-dimensional coordinate plane to four-dimensional operation.
+
+Please use the malloc init function to initialize the 4-dimensional array.
+
+
+Input
+有一個正整數 N（1 ≦ N ≦ 10^5），代表 Magic Number。
+
+Output
+有一個正整數，代表 Magic Number 乘上 2 的 4 次方。
