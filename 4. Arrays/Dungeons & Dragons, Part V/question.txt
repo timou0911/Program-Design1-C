@@ -1,0 +1,14 @@
+Walk through the gate that we have opened in the last part, we find out that a treasure box stays right at the center of the room. The treasure box is locked by a combination lock with six rotating discs (labeled as 1st to 6th disc) on it, and there are 10 numbers, from 0 to 9, on each rotating discs.
+
+The correct password should be entered to unlock the treasure box, and the correct password could be determined by following steps: First, set all rotating discs to 0. Next, roll two dices , d1 and d2 (max scores are 6 and 8, respectively), for 75 times. In each round, the (d1)th disc should be rotated down for one click (increase the number by 1) if the score of d2 is odd, up for one click (decrease the number by 1), otherwise.
+
+Notice that number becomes 0 if you rotate down the disc that has number 9 on it, similarly, the number becomes 9 if you rotate up a disc that has number 0.
+
+Finally, the numbers are the password should be entered.
+
+
+Input
+75 lines of input with 2 integers d1 and d2 in each line. 1 <= d1 <= 6, 1 <= d2 <= 8.
+
+Output
+The password, the digits are seperated by a space.

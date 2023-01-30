@@ -1,0 +1,27 @@
+A full adder is a basic circuit. It is used to sum up two binary integer.
+
+full-adder.pngThe input of a full adder are the digits of two binary integers (denoted as A and B) at the same place, and a carry (denoted as C_in) from the previous calculation. The output are the sum of A, B and C_in (denoted as Sum), and whether the summation leads to a carry (denoted as Carry). All these A, B, C_in, Sum and Carry are bits. The truth table of a full adder is as below:
+
+
+For example, consider A = 0b11010 and B = 0b01010. When summing up A and B, we process from LSB to MSB. In each calculation, we only process 1 digit. Beside the digit of A and B, we also need to sum the carry from previous calculation (just as the summation of decimal numbers). The summing process is as below:
+
+       LSB     MSB
+   A    0 1 0 1 1
+   B    0 1 0 1 0
+(Carry)   0 1 0 1 1
+---------------
+  Sum   0 0 1 0 0 
+ Carry  0 1 0 1 1
+
+Thus, the sum of A + B is 0b00100, and the carry is 1.
+
+In this problem, we need to complete a 5-bits full adder. Input two lines of binary integers A and B, the program needs to output the Sum and the Carry. TA has implemented a part of the program. Please complete the remaining two functions full_adder_x and full_adder_c, which are responsible for the functions of full adder to output Sum and Carry respectively. The input of each function are 3 bits, representing A, B and C_in respectively. Please return a proper result of the calculation according to the truth table above.
+
+
+Input
+
+Two lines of 5-bits binary integer A and B.
+
+Output
+
+6 bits. First 5 bits representing the Sum, and the last bit is Carry.

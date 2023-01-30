@@ -1,0 +1,16 @@
+Amy is about to play the PD1 Bingo Game, the game requires a Bingo Card which is composed of an 8x8 table with numbers in range 1 - 256 occupy the spaces arbitrarily. Numbers in each Bingo Card will not be repeated.
+
+The host will pick 64 different numbers, and if the picked numbers form a horizontal, vertical as well as diagonal line on Amy’s Bingo Card, then the line could be recorded.
+
+Please help Amy to count how many lines she gets.
+
+
+Input
+The 1st to 8th input lines with 8 integers in each line indicate the Bingo Card.
+
+The 9th line with 64 integers indicates the numbers picked by the host.
+
+All the input numbers are with range 1 - 256.
+
+Output
+The number of lines on the Bingo Card.

@@ -1,0 +1,16 @@
+After the midterm exam, TAs want to analyze the number of students lying in different intervals. An interval is denoted as [B, A], TAs want to find out the number of students whose score is lower than B (score < B) , the number of students whose score is grater than or equal to B but lower than A (B <= score < A), and the number of students whose score is grater than or eqaul to A (score >= A).
+
+Now, given the scores of each student, and different [B, A] intervals, please help TAs do the statistics.
+
+
+Input
+The first line is an integer N (N < 1024), indicating the number of students.
+
+The following N lines indicates the score of each student.
+
+The next line is an integer T, indicating the number of different [B, A] intervals.
+
+And the following T lines contain 2 integers, which indicates the value of B and A (B ≤ A).
+
+Output
+For each [B, A] interval, print out 3 interger, which represents the number of students whose score is lower than B (score < B) , the number of students whose score is grater than or equal to B but lower than A (B <= score < A), and the number of students whose score is grater than or eqaul to A (score >= A), respectively.
