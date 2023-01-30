@@ -1,0 +1,13 @@
+Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. The formula for BMI is:
+
+BMI = W / H^2
+
+where W is weight in kilograms, and H is height in meters.
+
+John is x centimeters tall, and weigh y kilograms. Please calculate and output his BMI.
+
+Input
+Two integers `x` and `y`, representing John's height (in cm) and weight (in kg) respectively, where 100 <= x <= 200, 0 <= y <= 100.
+
+Output
+A single precision floating point number (float), representing John's BMI. Please round the result to 6 decimal places.

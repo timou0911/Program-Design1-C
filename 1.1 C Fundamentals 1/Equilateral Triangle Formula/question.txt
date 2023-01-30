@@ -1,0 +1,9 @@
+Given the length of the side of an equilateral triangle, Heron wants to determine the area of the equilateral triangle.
+
+He came up with the following formula, where a is the length of the side and A is the area. With √3 defined as 1.7320508f, please help Heron write a program to solve this problem.
+
+Input
+A positive integer `a` representing the length of the side of the equilateral triangle, where 0 < a <= 200.
+
+Output
+A single precision floating point number (float) representing the area of the triangle. Please round the result to three decimal places.

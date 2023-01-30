@@ -1,0 +1,8 @@
+Read two integers and store them in variables a and b.
+Swap the values in a and b and print them out .
+
+Input
+Two integers split by a space.
+
+Output
+Two integers split by a space.
