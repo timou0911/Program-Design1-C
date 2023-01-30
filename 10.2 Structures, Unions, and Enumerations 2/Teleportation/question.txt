@@ -1,0 +1,18 @@
+Saiki is a high school student who was born with all manners of psychic abilities. One of his psychic ablility is teleportation. He can go to anywhere that he desired instantly. The secret of his ability of teleportation is that he can decompose himself into small pieces to reduce the energy and the time to move, and reconstruct himself after the movement. The scientists want to simulate Saiki's ability with a program. They have found out a way to deconstruct a given object into sixteen small parts (p1 ~ p16). And they are trying to reconstruct them back. They have found out that the reconstructed object would be two unsigned long (l1 and l2), with the first part (p1) occupies the most significant byte of l1, the second byte occupies the next byte, and so on. That is:
+
+|      l1       |       l2       |
+| p1 | ... | p8 | p9 | ... | p16 |
+And the two unsigned long should be xored together to get the final result. Please help the scientists finish the simulation program.
+
+Notice:
+
+unsigned long occupies only 32 bits on Windows system, you may use unsigned long long to avoid overflow.
+
+Since the endian of the machine that runs CKJudge is little endian, you may notice that the output does not match the answer if you shift each byte manualy. If you face such problem, try to reverse the order of the bytes, that is, p8 occupies the first byte of l1 and so on.
+
+
+Input
+Sixteen integers in the hexdecimal format that represents the parts of the decomposed object.
+
+Output
+An unsigned long that represents the reconstructed object.

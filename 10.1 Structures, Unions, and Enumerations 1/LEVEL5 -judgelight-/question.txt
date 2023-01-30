@@ -1,0 +1,12 @@
+Given an array of struct ESPer which contains level and name,
+
+please sort this array in ascending order by level.
+
+hint: You can use C standard library's qsort function:
+
+
+Input
+An array of "struct ESPer", array length
+
+Output
+sort the array in ascending order by level.

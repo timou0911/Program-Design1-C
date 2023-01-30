@@ -1,0 +1,8 @@
+Write a program that implements matrix addition and multiplication of two matrices.
+
+
+Input
+The input contains three parts. The first and second part represent the information of the first matrix and the second matrix respectively. The first line of each part contains row and column number of the matrix, and the following line is an array of integers which represent the matrix itself. The second part is a character which represents the operation of the matrix.
+
+Output
+The content of the result matrix. Each element is followed by a space character.
