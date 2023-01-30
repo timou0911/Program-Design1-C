@@ -1,0 +1,16 @@
+We have learned how to calculate the Fibonacci sequence with recursive technique, but there are disadvantages while calculating the sequence with the orginal definition of Fibonacci: fib(k) = fib(k - 1) + fib(k - 2). Firstly, it takes long time to get the result with large k. Secondly, there are lots of numbers being recalculated.
+
+To avoid such disadvantages, a technique called fast doubling was introduced to calculate Fibonacci sequence. As the name of the technique implies, there exists a recursive formula to get fib(2k) and fib(2k + 1) from fib(k) and fib(k + 1), here are the formula:
+
+fib(2k) = fib(k) * [2 * fib(k + 1) - fib(k)]
+fib(2k + 1) = fib(k) * fib(k) + fib(k + 1) * fib(k + 1)
+
+where fib(1) = fib(2) = 1
+With the formula, the fib(k) could be calculated instantly as well as occupies little amount of memory. with the following loader code, please implement the function fib_fast_doubling().
+
+
+Input
+An integer k with in range 1 ~ 93.
+
+Output
+The value of fib(k).

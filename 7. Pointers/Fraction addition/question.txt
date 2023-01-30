@@ -1,0 +1,12 @@
+Anya is student of Eden Academy, although she has super powers but she is very bad at math(especially fraction addition). In order to get a Stella star she hope that she can do well in the upcoming math exam. Can you write a program to help her elegantly calculate fraction addition?
+
+Please finish fraction_adder function, calculate a_numerator/a_denominator + b_numerator/b_denominator and store the result in variable c_numerator and c_denominator.The c_numerator_ptr and c_denominator_ptr is a pointer that points to the address of c_numerator and c_denominator in the main function.
+
+
+Input
+
+4 numbers, the first and second number is the numerator and denominator for a, the third and fourth number is the numerator and denominator for b. The range of all four number is 1~1000.
+
+Output
+
+Output the irreducible fraction of a+b in the format of numerator/denominator

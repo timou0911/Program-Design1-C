@@ -1,0 +1,16 @@
+Halloween is coming, Mike is looking forward to ask for candy on the street, but there is a strange rule formed by the families on this street: when you ask for candies from two consecutive house, the people in this street will think you are greedy, thus, they'll take all of your candies back. In order to get the most candies, Mike wants to write a program to help him calculate the maximum number of candies he can get.
+
+He asked other friends who had been on the street to ask for candy, and learned the amount of candy that every family on the street would give, and stored it in the global variable array. Please complete the function maxChandy for Mike to calculate the maximum number of candies he can get.
+
+
+Input
+
+The ize of the array.
+
+1 <= size <= 40
+
+1 <= array[i] <= 8
+
+Output
+
+The maximum candies can get.

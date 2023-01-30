@@ -1,0 +1,46 @@
+Catarina will become a primary school student this year! In the first math class, Catarina will learn how to perform an integer addition :D
+
+In FORTUNE LOVER, the rule of interger addition is as follow:
+
+First, you use the IEEE 754 floating point number representation (float) to represent the augend and addend.
+
+For example, 1 is not 00000000 00000000 00000000 00000001, it is 00111111 10000000 00000000 00000000 instead.
+
+Similarly, 2 is not 00000000 00000000 00000000 00000010, it is 01000000 00000000 00000000 00000000 instead.
+
+You sum up these 2 32-bits binary number, and yield a 32-bits binary number as the result.
+
+You interpret the result as an 2's complement signed integer (int).
+
+For example, if the result is 00000000 00000000 00000000 00001111, then you interpret this bit pattern as 15.
+
+Similarly, if the result is 11111111 11111111 11111111 11110000, then you interpret this bit pattern as -16.
+
+Let's check out an example. If we want to calculate 1 + 2:
+
+Write down the IEEE 754 representation of 1 and 2:
+
+1 = 00111111 10000000 00000000 00000000
+
+2 = 01000000 00000000 00000000 00000000
+
+Sum up these 32-bits binary number and yield the result.
+
+   00111111 10000000 00000000 00000000
++) 01000000 00000000 00000000 00000000
+---------------------------------------
+   01111111 10000000 00000000 00000000
+Interpret the result as an signed integer:
+
+01111111 10000000 00000000 00000000 = 2139095040
+
+Therefore, 1 + 2 = 2139095040.
+
+You are Catarina's math teacher. In order to make this complicated addition rule easier to understand for Catarina, please illustrate the complete addition process while you explain the sample questions.
+
+
+Input
+Two integer a, b. The range of a, b is -999,999 <= a, b <= 999,999.
+
+Output
+The process of addition and its result. Please refer to examples.
