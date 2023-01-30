@@ -1,0 +1,30 @@
+Dongeons & Dragons (DnD) is a popular TRPG game. Players keep rolling several dice during the game to take actions. The results of the actions depend on the outcome of dice.
+
+Image that you are trying to beat a dragon in DnD, you have to roll six dice (named d1, d2, ..., d6) at each step. The rules of the dice are as follows:
+
+The sum of d1, d2 and d3 determines that who takes the turn to attack: If the sum is less than or equal to 10, the player attacks. Otherwise, the dragon attacks.
+
+In the player's turn to attack, there are three cases:
+
+If d4, d5 and d6 are identical, the player makes a critical hit.
+
+If the sum of d4 and d5 is greater than or equal to d6, the player makes a normal hit.
+
+Otherwise, the attack misses.
+
+In the dragon's turn to attack, there are also three cases:
+
+If any two of d4, d5 and d6 are identical, the attack misses.
+
+If the sum of d4 and d5 is not equal to d6, the dragon makes a normal attack.
+
+Otherwise, a critical attack is made by the dragon.
+
+The cases must be evaluated in the above order.
+
+
+Input
+Six space-separated integers that indicates the number of six dice (d1 to d6).
+
+Output
+A single line of string that indicates the result: "<attacker> attacks: <hit>". Where <attacker> has two possible values: "Player" and "Dragon". And <hit> has three possible values: "Critical Hit", "Normal Hit" and "Miss".

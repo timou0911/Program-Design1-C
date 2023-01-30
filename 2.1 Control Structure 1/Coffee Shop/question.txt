@@ -1,0 +1,29 @@
+Welcome to PD1 Coffee Shop! We provide 4 types of coffee:
+
+AMERICANO $ 110
+
+LATTE $ 150
+
+CAPPUCCINO $135
+
+MOCHA $ 145
+
+
+Please write a program to calculate how much should the client pay.
+
+Be aware of those troublesome customers！
+
+Some of them would ask for the coffee that is not presented in the menu.
+
+
+Input
+Two integers i, j separated by a space.
+
+Integer i indicates the type of the coffee on the menu (e.g. 1 is AMERICANO, 2 is LATTE, and so on), with range 1-100.
+
+Integer j indicates how many cups of coffee that the client wants, with range 1-20.
+
+Output
+If the number of coffee is on the menu, you need to print the total price in the following format: "The total price is <price> dollars!", where <price> is the amount of money that the client should pay.
+
+If not, you need to print "Wait, what?".
