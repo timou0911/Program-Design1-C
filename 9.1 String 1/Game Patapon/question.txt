@@ -1,0 +1,38 @@
+Patapon is a music game, you have to follow the rhythm and enter the commands to beat out the monster!
+
+There are three kinds of valid rhythm (or we say 「command」 below):
+
+PATA PATA PATA PON: move one step forward
+
+PON PON PATA PON：no move and attack on the monster (one blood)
+
+CHAKA CHAKA PATA PON：move one step backward and defend the monster's attack
+
+Notices:
+
+When the distance between you and the monster is bigger than 3, you can never attack on the monster.
+
+But if the distance is 0, the monster will trample on you, and you will die.
+
+Sometimes there are some wrong commands, for example, CHAKA CHAKA PON PON, those commands will be ignored with no effect.
+
+After entering ten commands (no matter the command is valid or not), the monster will attack on you.
+
+If the command before the monster's attack is not the defence (i.e. CHAKA CHAKA PATA PON), you will be attacked and die.
+
+But, if the monster's blood is 0 before the monster attacks on you, then it means you beat out the monster.
+
+There are at most 30 commands in one round, please print out the result of the game! (See I/O description)
+
+
+Input
+
+There are two numbers, the first one is 「the distance to the monster」, and the second one is 「the monster's bloods」
+
+Then, given a string that contains commands separated by '.' or ','. Followed by a newline.
+
+Output
+
+If you beat out the monster successfully, print out "YES" and one space, then print out the count of 「the valid commands」 before beating out the monster.
+
+On the contrary, if failed (e.g. you died or the commands end before beating out the monster), print out "NO" and one space, then print out the remaining bloods of the monster.

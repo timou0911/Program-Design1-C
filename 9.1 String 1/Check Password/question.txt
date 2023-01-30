@@ -1,0 +1,24 @@
+In our life, we often need to set up passwords, and when setting up passwords, the system usually avoids asking the user to enter the password only once, because it is likely to set up the wrong password accidentally. Therefore, we will ask the user to enter the password twice and check if it is the same.
+
+When setting a password, you must follow the password rules in order to successfully set a high-strength password that matches the conditions.
+
+As a future engineer (?), you are asked to implement a feature that allows users to set a password based on the following conditions.
+
+There is a priority for the password conditions, and the priority is from top to bottom, as long as the higher priority failed, the subsequent judgment will not be made. That is, when condition 1 is not satisfied, the judgment of conditions 2 and 3 will not be made; when condition 2 is not satisfied, the judgment of condition 3 will not be made.
+
+The password conditions are as follows.
+
+1. Both passwords must be between 6 and 16 digits long (Check only if the length are within the range, no need to check if the length are the same)
+
+2. The password must be the same for both inputs
+
+3. The password must contain both upper case, lower case and numeric characters
+
+Next, please observe the loader code, you can find that when the password condition does not match, the function will return 1 and print out which condition does not match. Please complete the three functions to determine the password condition according to the contents of the loader code.
+
+
+Input
+The user enters the password twice, with a length between 1 and 20, and only three types of characters will be entered: upper case, lower case, and numbers.
+
+Output
+According to the judgment result of the password conditions, output the corresponding text, length is too long or too short: "Length does not match the requirements"; two input inconsistencies: "Not the same password"; password does not meet the conditions: "Do not satisfy the conditions"; password meets the conditions: "Everything is good".

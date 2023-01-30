@@ -1,0 +1,23 @@
+It’s no secret that how annoying the cat is.
+One day, Amy just forgot to turn off her computer after she finished her homework, which gave her pet cat an opportunity to ruin her homework.
+
+We have already known that a valid homework should fulfill following restrictions:
+
+Each word contains only alphabets, that is a-z and A-Z.
+
+Only four punctuations, ., ,, ! and ? may appear right after a word and should not appear alone.
+
+The length of each word (including punctuation) should be with in range 1 ~ 21.
+
+The words are seperated by a whitespace.
+
+Any pattern that violates above restrictions is produced by Amy’s pet cat, which should be removed.
+
+Please implement a program to help Amy safe her homework.
+
+
+Input
+A string with length 1 ~ 4096 .
+
+Output
+The recovered homework.
