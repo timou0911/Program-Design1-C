@@ -1,0 +1,33 @@
+Humans can distinguish colors based upon the different combination of the light of different wavelendth. Human eye is more responsive to light that is perceived as red, green and blue. Therefore, color red, green and blue are known as the (additive) primary colors. We can obtain any color by mixing RGB colors light with different proportion.
+
+
+The additive color mixing technique is used on color display (screen) to display colorful graph. A color display consists of millions of pixels, each pixel is further composed of 3 tiny LEDs with color red, green and blue respectively. By adjusting the brightness of each LED, a pixel can emit light in any color. With different pixel displaying different color, an colorful image is formed on the screen.
+
+For the simplification of the hardware, the brightness of a color LED is usually devided into 256 stages, with stage 0 being completely dark (black), and stage 255 being completely bright. Therefore, we can use an 8-bits data to describe the brightness of a LED. Since each pixel is composed of 3 LEDs, we need 24 bits in total to describe the color of a pixel. Usually, the 24-bits data is written in a 6-digits hexadecimal number, with the first 2 digits representing brightness of color red, the second 2 digits representing green, and the last 2 digits representing blue. If the value is 00, it means that color is completely dark; if the value is FF (255), it means that color is completely bright. For example: #FF0000 is true red, and the background color of CK Judge webpages is #1E2226. This color representation is called RGB HEX color code.
+
+Using RGB HEX color code to describe color on a monitor is quite straightforward, but it becomes inadvisable when we want to describe printed colors, since the paper do not emit light. In color printing, we use CMYK color model to describe colors. CMYK refers to the 4 ink colors used in color printing: Cyan, Magenta, Yellow, and blacK. A white paper looks white since it reflects all the colors of light. When we cover white paper with some cyan ink, the covered area won't reflect the red light, and the color of that area is therefore looks like cyan (green + blue). Similarly, the area covered with magenta ink looks magenta (red + blue) since it doesn't reflect green light, and the area covered with yellow ink looks yellow (red + green) since it doesn't reflect blue light. Ideally, if we cover an area with all these 3 color, it should become black. But since inks are unable to completely block the reflection of light, additional black ink is required to print color black properly.
+
+When printing, a colorful image is decomposed into 4 single color layers C, M, Y, K. In each layer, each pixel is covered with ink with certain proportion, where 0% means no ink covered (white), and 100% means fully covered. After 4 colors are all printed, it becomes a colorful picture, as the following figure illustrates. With this in mind, we can use 4 percentages to describe a CMYK color. For example, true red can be describe as (0%, 100%, 100%, 0%), and #1E2226 can be described as (21%, 10%, 0%, 85%).
+
+Everything You Need to Know About CMYK Printing
+
+We can use following equations to convert CMYK color to RGB HEX color code:
+
+R = 255 × (100 - C)% × (100 - K)%
+G = 255 × (100 - M)% × (100 - K)%
+B = 255 × (100 - Y)% × (100 - K)%
+
+The range of R, G, B is [0, 255], and the range of C, M, Y, K is [0, 100]. This calculation revolves floating number multiplication, and the result should be rounded to the nearest integer. You can use lround() function defined in <math.h> to get the precise result.
+
+In this problem, let simulate the CMKY color printing process. Given the width W and height H of an image, and 4 CMYK color layers mask of that image, please record these layers and output the image in RGB HEX color code.
+
+
+Input
+
+The first line contains 2 integer, which is the width `W` and the height `H` of the image.
+
+And it follows by 4 H x W matrics, representing 4 color layer C, M, Y, K. Each element of the matrics is in range [0, 100].
+
+Output
+
+A H x W matrix with each element being RGB HEX color code #RRGGBB.

@@ -1,0 +1,23 @@
+The numbers in the Arithmetic Progression (AP) are called terms. The first term, called the first term, is denoted by a_1; the nth term, called the last term, is denoted by a_n; and the common difference is denoted by d.
+
+The sum of the members of a finite arithmetic progression is called an arithmetic series (sum of arithmetic progression, sum of arithmetic sequence), and is denoted by S_n.
+
+For example, there is an equal series with 1 as the first term, 5 as the last term, and a tolerance of 1, and its sum is 15.
+
+And the calculation can be broken down into the following ideas.
+
+
+Use the concept of recursion to complete the remaining function sum, where the first term, last term, and common difference of any input are known, and the first term is passed into the sum function to calculate the sum of arithmetic progression.
+
+Note: The first term a1, the last term an, and the common difference d are global variables. Global variables are those variables declared directly outside the (main) function, so these three variables can be used in both the main function and the sum function.
+
+
+Input
+
+Three global variables, all integers. The first term a_1, the last term a_n, and the tolerance d are separated by a space between each of the three variables.
+
+The range of first and last items is -10000~10000, and the range of common difference is 0~10000, all are legal inputs.
+
+Output
+
+Arithmetic series (sum of arithmetic progression, sum of arithmetic sequence).
