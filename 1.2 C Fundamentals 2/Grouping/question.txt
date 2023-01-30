@@ -1,0 +1,10 @@
+Ms. Mary has been struggling with grouping lately. She taught many classes, each with a different number of students. For different classes, she wants to assign different numbers of students to all groups. Ms. Mary wants an excellent PD1 student to write a program to solve her problem.
+
+She wants to enter the class size and group size into the program. After dividing the students evenly into groups (i.e., each group has the same number of students), she wants to know how many students are in each group and how many students are left behind.
+
+Input
+Two integers i and j are separated by a space.
+Integer i indicates how many students in a class, with range 50-200, and integer j indicates how many groups to divide in this class, with range 2-25.
+
+Output
+The program prints the number of students in each group, and the number of remaining students without groups, separated by a blank space.
