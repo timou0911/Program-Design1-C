@@ -1,0 +1,8 @@
+Given n different positive integers, please move the maximum value to the tail of the linked list.
+
+
+Input
+5 <= n <= 1000, each value will be less 100000.
+
+Output
+The content of the linked list.

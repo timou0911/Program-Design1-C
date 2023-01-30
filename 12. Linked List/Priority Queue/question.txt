@@ -1,0 +1,22 @@
+Priority Queue is a very useful data structure that is implemented in many systems, such as the scheduler of Linux or the stock transaction system. Now, with given structure of priority queue node, please implement the enqueue and dequeue function of priority queue:
+
+There are two fields: value and weight in the priority queue node, the nodes in the queue should be formed as linked-list.
+
+To perform enqueue operation, the rank of nodes depends on the weight of nodes, smaller comes first, and if the weights of two nodes are identical, the newly inserted node should come after the other node.
+
+The dequeue operation returns the first node of entire priority queue, NULL if priority queue is empty.
+
+Print the value of nodes that are still in the priority queue from the head, which will be performed by the loader code.
+
+
+Input
+The first line of input contains an integer N indicates the number of operations.
+
+The rest of N lines are the operations and each operation should be either "ENQUEUE V W" or "DEQUEUE",
+
+where the former one means insert a node with value V and weight W to Priority Queue, while the later one
+
+fetches a node from the head of Priority Queue.
+
+Output
+The value of nodes in Priority Queue after each operation.

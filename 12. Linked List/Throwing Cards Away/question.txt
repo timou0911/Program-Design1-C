@@ -1,0 +1,7 @@
+Given an ordered deck of n cards numbered 1 to n with card 1 at the top and card n at the bottom, throw away the top card and move the next card that is on the top of the deck to the bottom of the deck. Repeat this process m times and find the sequence of discarded cards.
+
+Input
+Two integers n & m.
+
+Output
+The sequence of the discarded cards. Every number is followed by one space.

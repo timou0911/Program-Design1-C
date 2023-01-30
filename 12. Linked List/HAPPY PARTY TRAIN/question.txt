@@ -1,0 +1,26 @@
+One tourist train is departing, and it's powered by a steam locomotive.
+
+Unfortunately, when passengers holding a party in cars,
+
+the coal used as fuel in the back of the locomotive is on fire, burning red.
+
+And every car contains different number of flammable items.
+
+When passengers see the fire coming, they try to move these items to prevent fire burn to their car.
+
+If number of peoples in the car >= amounts of flammable items, fire will not burn to this car and the following cars.
+
+Otherwise, passengers in this car will evacuate to the the next car.
+
+Now you know the number of people & flammable items in each car,
+
+Please calculate how many cars will be burnt by fire.
+
+This train is represented with linked-list，each Car node's next will point to the next car，last cat will points to NULL
+
+
+Input
+Head node of the linked-list representing the train.
+
+Output
+Return one integer how many car is on fire.
