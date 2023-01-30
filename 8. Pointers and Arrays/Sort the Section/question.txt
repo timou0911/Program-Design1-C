@@ -1,0 +1,12 @@
+Given a sequence of integers A, and two index a b, sort the section of A from index a to b(suppose a is smaller than b)
+
+Please use bubble sort to finish sort_section function, the ptr and qtr is a pointer that points to the start/end of the section.(ptr ≠ qtr, but ptr might be bigger than qtr)
+
+
+Input
+
+The first line is an integer N(2 ≤ N ≤ 1000), indicates the number of integers in A. The second line has two integers a and b(a ≠ b, does not guarantee that a < b), indicates the start/end index of the section. The third line has N integers, indicates the elements of sequence A.
+
+Output
+
+When sorting the section, please output the result on each round, then output the whole sequence.

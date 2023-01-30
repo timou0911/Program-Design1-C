@@ -1,0 +1,10 @@
+Sudoku is a logical based, combinatorial number-placement puzzle. The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contain all of the digits from 1 to 9.
+
+Write a program which checks the input sudoku puzzle and prints out the row number and column number of the points that do not satisfy sudoku's requirements.
+
+
+Input
+The parameter of the check_sudoku function is a pointer that points to a two-dimentional integer array, which represents the sudoku puzzle.
+
+Output
+Print out the row number and column number of the points (from left to right then top to bottom) that do not satisfy soduku's requirements. Each point printed out is followed by a newline character, and is in the format (row,column).

@@ -1,0 +1,20 @@
+Given two sequences A, B with N positive integers each, return the sequence A and B that satisfies the same index value of both sequences at least a few times, and the elements of A will be larger than the elements of B and the final A sequence.
+
+For the index value i (0<=i<N), swap the elements of Ai and Bi
+
+More systematically, please return A after at least a few operations to satisfy for all i (1 ≦ i ≦ N), so that Ai ≥ Bi, and after completing all operations.
+
+
+Input
+
+The first line has a positive integer N (1 ≦ N ≦ 10^5), representing the sequence A, B has several positive integers.
+
+The second row has N positive integers A_1, A_2.... .A_N, representing the elements of the sequence A. (for all 1 ≦ i ≦ N, 1 ≦ A_i ≦ 10^9)
+
+The third row has N positive integers B_1, B_2.... .B_N, representing the elements of sequence B. (for all 1 ≦ i ≦ N, 1 ≦ B_i ≦ 10^9)
+
+Output
+
+The first row has a positive integer S, which represents the number of operations needed to find the most.
+
+The second row has N positive integers, which represent the final A sequence after the operation.
