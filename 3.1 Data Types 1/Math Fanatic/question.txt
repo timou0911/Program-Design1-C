@@ -1,0 +1,25 @@
+Dot is a math fanatic and today he wants to observe the relationship between addition and factorization.
+
+Today there is a sequence S containing N positive integers. If the i-th item of the prefix sum can be divided by Si, then output the i-th item of the prefix sum with Si. If there are more than one set, please output them in the input order. (1<=i<=N)
+
+ex.
+
+S = {1, 3, 7};
+
+Prefix Sum = {1, 4, 11};
+
+
+It can be observed that there must be a solution because the first term of the prefix sum is the same as the first term of the original sequence, which means it must be divisible.
+
+
+Input
+
+The first line has a positive integer N (1 ≦ N ≦ 10^5), representing the sequence S with several integers.
+
+The second line has N positive integers S_1, S_2.... S_N, representing the elements of the sequence S. (for all 1 ≦ i ≦ N, 1 ≦ S_i ≦ 10^9)
+
+Output
+
+For the elements that meet the condition, output the prefix and the element separated by a space.
+
+Output each eligible element separated by a new line, if there are multiple groups, please output them in the order of input.

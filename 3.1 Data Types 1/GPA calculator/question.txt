@@ -1,0 +1,17 @@
+According to the National Cheng Kung University Transcript Guide NCKU has both a numerical grading system and a letter grading system to mark grades on the transcript. The letter grading system can be presented as A, B, C, and F. Within grade A, grade B, and grade C, each can have an optional “+” or “-”.
+
+Each grade have a corresponding grade point which can be used to calculate GPA, the formula for GPA is GPA = (credit * grade point) / total credit The following table is the equivalent values for grade, letter grade and grade points.
+
+
+Grade         100-90  89-95  84-80  79-77  76-73  72-70  69-67  66-63 62-60  59-0
+Letter Grade    A+      A      A-     B+     B      B-     C+     C     C-     F
+Grade Points    4.3    4.0    3.7     3.3   3.0    2.7     2.3   2.0   1.7     0
+
+Please calculate the GPA using the formula and table above.
+
+
+Input
+The input will be a sequence of Number, Alphabet and an optional “+” or “-”, the number represents the credit, the alphabet represents the grade letter. The sequence may be repeated multiple times, for example: 3C, 3A2B+1A-, 3F2B-2B-2A, and at the end of the input will be a "\n" character. You don’t need to worry about invalid input such as 1F-2B, 3B++1A,3G4X.
+
+Output
+The GPA printed to 2 decimal place
