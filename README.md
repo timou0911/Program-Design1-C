@@ -1,3 +1,3 @@
 # program-design1-C
 
-C problems.
+C problems in Program Design course.
